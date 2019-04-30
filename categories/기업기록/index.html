@@ -2,24 +2,19 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>190424 Introduction to JavaScript(2/2) - 21iron</title>
+<title>Category: 기업기록 - 21iron</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="[바코002]">
-<meta name="keywords" content="JavaScript">
-<meta property="og:type" content="article">
-<meta property="og:title" content="190424 Introduction to JavaScript(2&#x2F;2)">
-<meta property="og:url" content="https://21iron.github.io/2019/04/29/20190429/index.html">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="21iron">
+<meta property="og:url" content="https://21iron.github.io/categories/기업기록/index.html">
 <meta property="og:site_name" content="21iron">
-<meta property="og:description" content="[바코002]">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://21iron.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-30T07:42:33.463Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="190424 Introduction to JavaScript(2&#x2F;2)">
-<meta name="twitter:description" content="[바코002]">
+<meta name="twitter:title" content="21iron">
 <meta name="twitter:image" content="https://21iron.github.io/images/og_image.png">
 
 
@@ -94,7 +89,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/leewoncheol-logo.png" alt="190424 Introduction to JavaScript(2/2)" height="28">
+                <img src="/images/leewoncheol-logo.png" alt="21iron" height="28">
             
             </a>
         </div>
@@ -127,22 +122,34 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-8-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/categories">Categories</a></li>
+            
+            <li class="is-active"><a href="#" aria-current="page">기업기록</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-29T02:19:03.000Z">2019-04-29</time>
+                <time class="level-item has-text-grey" datetime="2019-04-30T11:51:23.000Z">2019-04-30</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/TIL/">TIL</a>
+                <a class="has-link-grey -link" href="/categories/기업기록/">기업기록</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 578 words)
+                    2 minutes read (About 259 words)
                 </span>
                 
                 
@@ -151,97 +158,75 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                190424 Introduction to JavaScript(2/2)
+                <a class="has-link-black-ter" href="/2019/04/30/HiddenTrack/">HiddenTrack</a>
             
         </h1>
         <div class="content">
-            <h6 id="바코002"><a href="#바코002" class="headerlink" title="[바코002]"></a>[바코002]</h6><a id="more"></a>
-<hr>
-<ul>
-<li>시작하며<ul>
-<li>코드 하나하나를 적재적소에 쓸 수 있도록 하자.</li>
-<li>코드 하나하나를 잘 조합하는 생각을 기르자.</li>
-<li>모든 경우의 수를 생각하는 습관을 기르자.</li>
-<li>알고리즘에 도움 되는 습관들이다.</li>
-<li>For구문의 순서를 이해하자.</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="Operators"><a href="#Operators" class="headerlink" title="Operators"></a>Operators</h4><ul>
-<li><h5 id="Logical-Operators-논리연산자"><a href="#Logical-Operators-논리연산자" class="headerlink" title="Logical Operators(논리연산자)"></a>Logical Operators(논리연산자)</h5><p><code>!NaN</code> : Logical Not</p>
-</li>
-<li><h5 id="Logical-Or-연산자"><a href="#Logical-Or-연산자" class="headerlink" title="Logical Or(||연산자)"></a>Logical Or(||연산자)</h5><p><code>undefined || true</code> : </p>
-<ol>
-<li>Or연산자는 왼쪽부터 truhy값을 찾아낸다 </li>
-<li>truthy값을 찾은 경우, 해당값을 반환한다.</li>
-<li>마지막에 도달할 경우, 마지막 값을 돌려준다.</li>
-</ol>
-</li>
-<li><h5 id="Logical-And-amp-amp-연산자"><a href="#Logical-And-amp-amp-연산자" class="headerlink" title="Logical And(&amp;&amp;연산자)"></a>Logical And(&amp;&amp;연산자)</h5><p><code>true &amp;&amp; &quot;&quot; &amp;&amp; 300</code> : </p>
-<ol>
-<li>왼쪽부터 Falsy 값을 찾아나간다.</li>
-<li>Falsy 값을 찾은 경우, 해당값을 반환한다.</li>
-<li>마지막에 도달할 경우, 마지막 값을 반환한다.</li>
-</ol>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">And연산자, Or연산자 동시에 있을 경우,</span><br><span class="line">And연산자 우선 처리</span><br><span class="line"></span><br><span class="line"><span class="hljs-literal">true</span>&amp;&amp;<span class="hljs-literal">true</span> || <span class="hljs-literal">false</span>&amp;&amp;<span class="hljs-literal">true</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><h5 id="Ternary-Operator-삼항-조건-연산자"><a href="#Ternary-Operator-삼항-조건-연산자" class="headerlink" title="Ternary Operator(삼항 조건 연산자)"></a>Ternary Operator(삼항 조건 연산자)</h5><p><code>true ? 1:2</code> : </p>
-<ol>
-<li>? 앞 구문이 참, 1 변환</li>
-<li>? 앞 구문이 거짓, 2 변환</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="Function"><a href="#Function" class="headerlink" title="Function"></a>Function</h4><ul>
-<li><h5 id="Basics"><a href="#Basics" class="headerlink" title="Basics"></a>Basics</h5><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">x, y</span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> result = x + y;</span><br><span class="line">  <span class="hljs-keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-comment">//Arguments/Parameters (x,y)</span></span><br><span class="line"><span class="hljs-comment">//Return (return result)</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">add</span>(<span class="hljs-params">x,y</span>)</span>&#123;</span><br><span class="line">	<span class="hljs-keyword">for</span>(<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">3</span>; i++)&#123;</span><br><span class="line">		<span class="hljs-keyword">if</span>(i === <span class="hljs-number">1</span>)&#123;</span><br><span class="line">		<span class="hljs-keyword">return</span>;</span><br><span class="line">		&#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">		<span class="hljs-built_in">console</span>.log(i)</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-keyword">var</span> b = add();</span><br><span class="line"><span class="hljs-built_in">console</span>.log(b);</span><br></pre></td></tr></table></figure>
-</li>
-<li><h5 id="Return-Value"><a href="#Return-Value" class="headerlink" title="Return Value"></a>Return Value</h5><ol>
-<li>함수 실행 결과값을 결정</li>
-<li>함수 실행 종료</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h4 id="Control-Flow"><a href="#Control-Flow" class="headerlink" title="Control Flow"></a>Control Flow</h4><ul>
-<li><h5 id="if…else-구문"><a href="#if…else-구문" class="headerlink" title="if…else 구문"></a>if…else 구문</h5><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">roll</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">return</span> <span class="hljs-built_in">Math</span>.ceil(<span class="hljs-built_in">Math</span>.random() * <span class="hljs-number">6</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">game</span>(<span class="hljs-params"></span>) </span>&#123;</span><br><span class="line">  <span class="hljs-keyword">var</span> result = roll();</span><br><span class="line"></span><br><span class="line">  alert(<span class="hljs-string">`결과: <span class="hljs-subst">$&#123;result&#125;</span>`</span>);</span><br><span class="line"></span><br><span class="line">  <span class="hljs-comment">// if...else 구문</span></span><br><span class="line">  <span class="hljs-keyword">if</span> (result &gt;= <span class="hljs-number">4</span>) &#123;</span><br><span class="line">    <span class="hljs-comment">// 괄호 안의 조건을 만족하면, 즉 결과값이 true 이면</span></span><br><span class="line">    <span class="hljs-comment">// 이 영역의 코드가 실행된다.</span></span><br><span class="line">    alert(<span class="hljs-string">'당신이 이겼습니다!'</span>);</span><br><span class="line">  &#125; <span class="hljs-keyword">else</span> &#123;</span><br><span class="line">    <span class="hljs-comment">// 위 조건을 만족하지 않으면, 즉 결과값이 false 이면</span></span><br><span class="line">    <span class="hljs-comment">// 대신 이 영역의 코드가 실행된다.</span></span><br><span class="line">    alert(<span class="hljs-string">'당신이 졌습니다.'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">game();</span><br></pre></td></tr></table></figure>
-</li>
-<li><h5 id="For-구문"><a href="#For-구문" class="headerlink" title="For 구문"></a>For 구문</h5><figure class="highlight javascript hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-comment">// for (초기값 정의; 실행 조건; 갱신) &#123; ... &#125;</span></span><br><span class="line"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; <span class="hljs-number">5</span>; i++) &#123;</span><br><span class="line">  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">`현재 i의 값: <span class="hljs-subst">$&#123;i&#125;</span>`</span>);</span><br><span class="line">&#125;</span><br><span class="line"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">'루프가 종료되었습니다.'</span>);</span><br><span class="line"><span class="hljs-comment">// for 구문의 순서를 생각해보자</span></span><br><span class="line"><span class="hljs-comment">// 1. var i = 0; 시작</span></span><br><span class="line"><span class="hljs-comment">// 2. 실행 조건(i &lt; 5)이 참인지 거짓인지 확인</span></span><br><span class="line"><span class="hljs-comment">// 3. 함수 구문으로 들어가 실행</span></span><br><span class="line"><span class="hljs-comment">// 4. for 구문으로 들어와 i++ 갱신을하고</span></span><br><span class="line"><span class="hljs-comment">// 5. 다시 2번부터 5번까지 반복한다.(샐행조건이 거짓일 때 까지)</span></span><br></pre></td></tr></table></figure>
-<ol>
-<li>For 구문의 순서를 잘 이해해야지 더 다양하게 활용 할 수 있다.</li>
-</ol>
-</li>
-</ul>
-</li>
-</ul>
-<hr>
-<ul>
-<li><h5 id="예습하자"><a href="#예습하자" class="headerlink" title="예습하자"></a>예습하자</h5><p><a href="https://developer.mozilla.org/ko/docs/Glossary/Primitive" target="_blank" rel="noopener">Primitive</a></p>
-<p><a href="https://www.w3schools.com/jsref/" target="_blank" rel="noopener">Reference</a></p>
-</li>
-</ul>
-
+            <p>[기업 002]</p>
+<p><img src="https://k.kakaocdn.net/dn/cvrKiz/btqt3h6DLVH/PTZkpftKs0ynMullrkWZ3K/img.png" alt></p>
         </div>
         
-        <div class="level is-size-7 is-uppercase">
+        
+        <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/JavaScript/">JavaScript</a>
+                <a class="button is-size-7 is-light" href="/2019/04/30/HiddenTrack/#more">Read More</a>
                 </div>
             </div>
         </div>
         
         
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-30T11:17:54.000Z">2019-04-30</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/기업기록/">기업기록</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 minutes read (About 429 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/30/RIDI/">RIDI</a>
+            
+        </h1>
+        <div class="content">
+            <h5 id="기업-001"><a href="#기업-001" class="headerlink" title="[기업 001]"></a>[기업 001]</h5><p><img src="https://k.kakaocdn.net/dn/ob1tb/btqtYZsibSZ/K1gvWNbphDoiTnxSdNBKtK/img.png" alt></p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/04/30/RIDI/#more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
         
     </div>
 </div>
@@ -250,26 +235,7 @@
 
 
 
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/04/30/20190430/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">190429 Primitive &amp; Reference</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/28/20190428[2]/">
-                <span class="level-item">190422 Introduction to JavaScript(1/2)</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
+
 
 
 </div>
@@ -478,7 +444,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/leewoncheol-logo.png" alt="190424 Introduction to JavaScript(2/2)" height="28">
+                    <img src="/images/leewoncheol-logo.png" alt="21iron" height="28">
                 
                 </a>
                 <p class="is-size-7">
